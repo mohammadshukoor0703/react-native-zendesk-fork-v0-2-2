@@ -161,7 +161,8 @@ public class RNZendeskChat extends ReactContextBaseJavaModule {
         String botName = options.getString("botName");
         ChatConfiguration chatConfiguration = ChatConfiguration.builder()
                 .withAgentAvailabilityEnabled(true)
-                .withOfflineFormEnabled(true)
+                .withPreChatFormEnabled(false)
+                .withOfflineFormEnabled(false)
                 .build();
 
         Activity activity = getCurrentActivity();
